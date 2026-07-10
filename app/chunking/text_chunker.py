@@ -1,8 +1,8 @@
 from uuid import uuid4
 
 from app.config.settings import settings
-from app.utils.chunk import Chunk
-from app.utils.document import Document
+from app.models.document import Document
+from app.models.chunk import Chunk
 from app.utils.logger import get_logger
 
 

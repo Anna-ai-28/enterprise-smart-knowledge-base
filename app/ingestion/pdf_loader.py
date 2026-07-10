@@ -3,7 +3,7 @@ from pathlib import Path
 from pypdf import PdfReader
 
 from app.config.settings import settings
-from app.utils.document import Document
+from app.models.document import Document
 from app.utils.logger import get_logger
 
 

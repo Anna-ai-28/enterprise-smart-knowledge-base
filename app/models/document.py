@@ -2,13 +2,12 @@ from dataclasses import dataclass
 
 
 @dataclass(slots=True)
-class Chunk:
+class Document:
     """
-    Represents one chunk of text along with
-    metadata required for retrieval.
+    Represents one extracted document page
+    and its metadata.
     """
 
-    chunk_id: str
     content: str
     source_file: str
     page_number: int
