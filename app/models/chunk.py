@@ -1,14 +1,14 @@
-from dataclasses import dataclass
+from dataclasses import dataclass, field
+from typing import Any
 
 
 @dataclass(slots=True)
 class Chunk:
     """
-    Represents one text chunk ready
-    for embedding and retrieval.
+    Represents a chunk of text ready for
+    embedding and retrieval.
     """
 
-    chunk_id: str
-    content: str
-    source_file: str
-    page_number: int
+    id: str
+    text: str
+    metadata: dict[str, Any] = field(default_factory=dict)
